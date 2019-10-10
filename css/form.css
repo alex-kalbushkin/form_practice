@@ -1,0 +1,65 @@
+
+.form-group {  
+  margin: 12px 0;
+}
+
+form .form-group:first-child {
+  margin-top: 0;
+}
+
+form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group input {
+  cursor: pointer;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  min-width: 300px;
+  border: 1px solid #444444;
+  padding: 6px;
+  color: #474747;
+  text-shadow: 3px 4px 3px rgba(65, 65, 65, 0.5);
+  transition: background-color 150ms, border 150ms; 
+}
+
+.form-group input[type="text"]:hover,
+.form-group input[type="password"]:hover {
+  background-color: rgb(216, 215, 215);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  border: 1px dashed #8a7a7a;
+  outline: none;
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="checkbox"] + label {
+  display: inline-block;
+}
+
+.form-group input.touched:invalid {               /* динамически создаем класс touched (в app.js функция onFieldBlur) для того чтобы валидация прошла после того, как пользователь был в поле и ушел (если не заполнил, то поле с красной рамкой)*/
+  border: 1px solid rgb(173, 78, 78);
+}
+
+.form-group .error {
+  color: red;  
+}
+
+.error {
+  color: red;
+  
+}
+
+
+
